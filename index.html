@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Marina Macedo - Desenvolvedora Frontend e Backend. Criação de experiências digitais modernas, eficientes e bem estruturadas.">
+  <title>Marina Macedo | Desenvolvedora Frontend & Backend</title>
+  
+  <!-- Fontes: Poppins (Google Fonts) e Georgia (Web Safe) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Efeito Site 2: Cortina de abertura de tela (Belgrade Arbor reveal) -->
+  <div class="intro-curtain" id="introCurtain" aria-hidden="true">
+    <div class="intro-shutter intro-shutter-left"></div>
+    <div class="intro-shutter intro-shutter-right"></div>
+    <div class="intro-content">
+      <span class="intro-logo">MM</span>
+      <div class="intro-line"></div>
+    </div>
+  </div>
+
+  <!-- Efeito Site 3: Bolinhas e partículas flutuantes no fundo (EverSwap) -->
+  <canvas id="particles-canvas" class="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- 1. Menu fixo com links para as seções futuras -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Navegação principal">
+      <a href="#inicio" class="nav-logo" id="navLogo">
+        <span class="logo-mark">M</span>arina<span class="logo-dot">.</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link active">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#contato" class="btn-nav">Fale Comigo</a>
+      </div>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Hero: Nome em destaque, frase de apresentação e CTA -->
+    <!-- Efeito Site 1: Efeito 3D parallax interativo que reage ao movimento do mouse (Emotion Agency) -->
+    <section id="inicio" class="hero-section" aria-label="Apresentação inicial">
+      <div class="hero-scene" id="heroScene">
+        <div class="hero-parallax-layer" id="parallaxLayer">
+          
+          <!-- Badge de identificação -->
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Desenvolvedora Frontend &amp; Backend</span>
+          </div>
+
+          <!-- Nome principal em destaque centralizado -->
+          <h1 class="hero-name" id="heroName">
+            <span class="name-first">Marina</span>
+            <span class="name-last">Macedo</span>
+          </h1>
+
+          <!-- Cargo / Subtítulo complementar -->
+          <p class="hero-role">Construindo soluções digitais modernas, funcionais e intuitivas</p>
+
+          <!-- Frase de apresentação solicitada -->
+          <blockquote class="hero-quote">
+            <span class="quote-mark">“</span>
+            <p>As quedas não te definem, mas sim as vezes que você se levanta.</p>
+            <span class="quote-mark">”</span>
+          </blockquote>
+
+          <!-- Botão de chamada para ação (CTA) -->
+          <div class="hero-actions">
+            <a href="#projetos" class="btn-primary" id="btnCta">
+              <span>Conhecer meus projetos</span>
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#sobre" class="btn-secondary" id="btnSecondary">
+              <span>Sobre mim</span>
+            </a>
+          </div>
+
+          <!-- Indicador sutil de scroll -->
+          <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-mouse">
+              <span class="scroll-wheel"></span>
+            </span>
+            <span class="scroll-text">Explore</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- 2. Seção Sobre Mim -->
+    <section id="sobre" class="section sobre-section" aria-label="Sobre Marina Macedo">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Conheça Minha Trajetória</span>
+          <h2 class="section-title">Sobre Mim</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="sobre-box">
+          <div class="sobre-header-badge">
+            <span class="badge-icon">🎓</span>
+            <span class="badge-label">Formação Técnica • Colégio Raphael Di Santo</span>
+          </div>
+
+          <div class="sobre-content">
+            <h3 class="sobre-greeting">Olá! Sou <span class="highlight-text">Marina Macedo</span></h3>
+            <p class="sobre-bio-main">
+              <strong>Marina Macedo</strong>, Desenvolvedora de Frontend e Backend, formada no curso técnico no <strong>Colégio Raphael Di Santo</strong>.
+            </p>
+            <p class="sobre-bio-text">
+              Com perfil jovem, dinâmico e focado em organização, dedico-me a criar aplicações web completas, unindo interfaces visualmente encantadoras e intuitivas no frontend a arquiteturas seguras, eficientes e bem estruturadas no backend.
+            </p>
+
+            <div class="sobre-cards">
+              <div class="info-card">
+                <div class="info-card-icon">💻</div>
+                <div class="info-card-text">
+                  <h4>Frontend</h4>
+                  <p>HTML5, CSS3 moderno, JavaScript puro, responsividade e UI/UX.</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-card-icon">⚙️</div>
+                <div class="info-card-text">
+                  <h4>Backend</h4>
+                  <p>Lógica estruturada, integração de APIs, bancos de dados e boas práticas.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sobre-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript (ES6+)</span>
+              <span class="tech-tag">Git & GitHub</span>
+              <span class="tech-tag">APIs REST</span>
+              <span class="tech-tag">Colégio Raphael Di Santo</span>
+            </div>
+
+            <div class="sobre-actions">
+              <a href="#contato" class="btn-primary">
+                <span>Falar Comigo</span>
+              </a>
+              <a href="https://github.com/37801-ctrl" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                <span>Ver GitHub Completo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Seção Galeria de Projetos -->
+    <section id="projetos" class="section projetos-section" aria-label="Galeria de Projetos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfólio em Ação</span>
+          <h2 class="section-title">Galeria de Projetos</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Clique em qualquer projeto para abrir os detalhes e acessar o repositório oficial no GitHub.
+          </p>
+        </div>
+
+        <div class="projetos-grid" id="projetosGrid">
+          
+          <!-- Projeto 1: Marina-AG.02 -->
+          <article class="projeto-card" data-repo="https://github.com/37801-ctrl/Marina-AG.02.git">
+            <div class="projeto-card-inner">
+              <div class="projeto-header">
+                <div class="projeto-category-badge">Automação & Web</div>
+                <a href="https://github.com/37801-ctrl/Marina-AG.02.git" target="_blank" rel="noopener noreferrer" class="repo-icon-btn" aria-label="Abrir repositório Marina-AG.02 no GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+              <h3 class="projeto-title">Marina-AG.02</h3>
+              <p class="projeto-desc">
+                Sistema avançado e interativo de desenvolvimento frontend focado em modularidade, fluidez e organização de código.
+              </p>
+              <div class="projeto-tech-list">
+                <span class="mini-tag">JavaScript</span>
+                <span class="mini-tag">Frontend</span>
+                <span class="mini-tag">Automação</span>
+              </div>
+              <div class="projeto-footer">
+                <a href="https://github.com/37801-ctrl/Marina-AG.02.git" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <span>Acessar Repositório</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 2: RPG-mari -->
+          <article class="projeto-card" data-repo="https://github.com/37801-ctrl/RPG-mari.git">
+            <div class="projeto-card-inner">
+              <div class="projeto-header">
+                <div class="projeto-category-badge">Game Dev & Lógica</div>
+                <a href="https://github.com/37801-ctrl/RPG-mari.git" target="_blank" rel="noopener noreferrer" class="repo-icon-btn" aria-label="Abrir repositório RPG-mari no GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+              <h3 class="projeto-title">RPG-mari</h3>
+              <p class="projeto-desc">
+                Jogo de interpretação de papéis (RPG) interativo com mecânicas de batalha, lógica de turnos e progressão de personagens.
+              </p>
+              <div class="projeto-tech-list">
+                <span class="mini-tag">Game Logic</span>
+                <span class="mini-tag">JavaScript</span>
+                <span class="mini-tag">Interatividade</span>
+              </div>
+              <div class="projeto-footer">
+                <a href="https://github.com/37801-ctrl/RPG-mari.git" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <span>Acessar Repositório</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 3: IA-app -->
+          <article class="projeto-card" data-repo="https://github.com/37801-ctrl/IA-app.git">
+            <div class="projeto-card-inner">
+              <div class="projeto-header">
+                <div class="projeto-category-badge">Inteligência Artificial</div>
+                <a href="https://github.com/37801-ctrl/IA-app.git" target="_blank" rel="noopener noreferrer" class="repo-icon-btn" aria-label="Abrir repositório IA-app no GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+              <h3 class="projeto-title">IA-app</h3>
+              <p class="projeto-desc">
+                Aplicação conectada a modelos e conceitos de Inteligência Artificial, gerando soluções dinâmicas e automações inteligentes.
+              </p>
+              <div class="projeto-tech-list">
+                <span class="mini-tag">IA & APIs</span>
+                <span class="mini-tag">Backend</span>
+                <span class="mini-tag">Inovação</span>
+              </div>
+              <div class="projeto-footer">
+                <a href="https://github.com/37801-ctrl/IA-app.git" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <span>Acessar Repositório</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 4: Design-front -->
+          <article class="projeto-card" data-repo="https://github.com/37801-ctrl/Design-front.git">
+            <div class="projeto-card-inner">
+              <div class="projeto-header">
+                <div class="projeto-category-badge">UI/UX & Design</div>
+                <a href="https://github.com/37801-ctrl/Design-front.git" target="_blank" rel="noopener noreferrer" class="repo-icon-btn" aria-label="Abrir repositório Design-front no GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+              <h3 class="projeto-title">Design-front</h3>
+              <p class="projeto-desc">
+                Interfaces visuais criativas com layouts responsivos, microinterações refinadas e foco na experiência do usuário.
+              </p>
+              <div class="projeto-tech-list">
+                <span class="mini-tag">UI/UX</span>
+                <span class="mini-tag">CSS Avançado</span>
+                <span class="mini-tag">Design System</span>
+              </div>
+              <div class="projeto-footer">
+                <a href="https://github.com/37801-ctrl/Design-front.git" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <span>Acessar Repositório</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Seção Contato -->
+    <section id="contato" class="section contato-section" aria-label="Entre em Contato">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Vamos Conversar</span>
+          <h2 class="section-title">Contato</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Tem um projeto ou oportunidade em mente? Envie uma mensagem diretamente para mim.
+          </p>
+        </div>
+
+        <div class="contato-grid">
+          
+          <!-- Card de Informações de Contato -->
+          <div class="contato-info-card">
+            <h3 class="info-title">Canais Diretos</h3>
+            <p class="info-description">
+              Sinta-se à vontade para me contatar por e-mail ou preencher o formulário ao lado.
+            </p>
+
+            <div class="contact-method">
+              <div class="contact-icon">📧</div>
+              <div class="contact-details">
+                <span class="contact-label">E-mail</span>
+                <a href="mailto:marinamac06@gmail.com" class="contact-value" id="emailLink">
+                  marinamac06@gmail.com
+                </a>
+              </div>
+              <button class="btn-copy-email" id="btnCopyEmail" title="Copiar e-mail para a área de transferência" aria-label="Copiar e-mail">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span class="copy-text">Copiar</span>
+              </button>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <span class="contact-label">Formação</span>
+                <span class="contact-value-static">Colégio Raphael Di Santo</span>
+              </div>
+            </div>
+
+            <!-- Feedback de cópia do e-mail -->
+            <div class="copy-toast" id="copyToast" role="alert" aria-live="polite">
+              ✨ E-mail copiado com sucesso!
+            </div>
+          </div>
+
+          <!-- Formulário de Mensagem -->
+          <div class="contato-form-card">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="nome" class="form-label">Seu Nome</label>
+                <input type="text" id="nome" name="nome" class="form-input" placeholder="Ex: Ana Silva" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Seu E-mail</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="seuemail@exemplo.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="assunto" class="form-label">Assunto</label>
+                <input type="text" id="assunto" name="assunto" class="form-input" placeholder="Oportunidade / Projeto" required />
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" class="form-input form-textarea" placeholder="Olá Marina, gostaria de conversar sobre..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary btn-submit" id="btnSubmitForm">
+                <span>Enviar Mensagem</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div class="form-feedback" id="formFeedback"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#inicio" class="nav-logo">
+          <span class="logo-mark">M</span>arina<span class="logo-dot">.</span>
+        </a>
+        <p class="footer-tagline">Marina Macedo • Desenvolvedora Frontend & Backend</p>
+      </div>
+
+      <div class="footer-quote">
+        <p>“As quedas não te definem, mas sim as vezes que você se levanta.”</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Marina Macedo. Formação Técnica no Colégio Raphael Di Santo.</p>
+        <p>Desenvolvido com HTML, CSS e JavaScript puros.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Interativo de Projeto (abre com detalhes ao clicar) -->
+  <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-window">
+      <button class="modal-close" id="modalClose" aria-label="Fechar detalhes do projeto">✕</button>
+      <div class="modal-badge" id="modalBadge">Categoria</div>
+      <h3 class="modal-title" id="modalTitle">Nome do Projeto</h3>
+      <p class="modal-desc" id="modalDesc">Descrição detalhada</p>
+      <div class="modal-tech" id="modalTech"></div>
+      <div class="modal-actions">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" id="modalRepoBtn">
+          <span>Ver no GitHub</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lógica JavaScript pura -->
+  <script src="script.js"></script>
+</body>
+</html>
